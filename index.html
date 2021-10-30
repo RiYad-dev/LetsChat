@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head id="htmloffp">
+    <title>Let's Chat</title>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body onload="setTexts();" id="bodyoffp">
+    <center>
+        <div class="container">
+            <h1 class="header" id="header1">
+                Let's Chat
+            </h1>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div" id="div_logreg">
+                <img src="logo.png" class="logo">
+                <h3 id="head3">Chat with your friends, family, class and more!</h3>
+                <h4 id="head4"></h4>
+                <h4 id="head_log">Login</h4>
+                <h4 id="alert_warning"></h4>
+                <h4 id="alert_success"></h4>
+                <div class="form-group" id="logreg">
+                    <input type="email" placeholder="E-mail" id="email_input" class="form-control">
+                    <input type="password" placeholder="Password" id="password_input" class="form-control martop">
+                    <h4 class="cryacc" id="account_reg">Don't have an account? <a onclick="registertxt();"
+                            class="crtacc">Create one</a></h4>
+                    <button id="login_button" class="btn btn-primary btlogin" onclick="Login();">Login</button>
+                </div>
+                <br><br>
+            </div>
+    </center>
+</body>
+<script src="main.js"></script>
+
+</html>

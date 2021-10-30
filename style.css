@@ -1,0 +1,363 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Asap", sans-serif;
+    background: linear-gradient(135deg, #EA5C54, #bb6dec);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#EA5C54 ", endColorstr="#bb6dec", GradientType=1);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.header {
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+    letter-spacing: 4px;
+    margin-top: 60px;
+}
+
+.login_div {
+    background: rgba(255, 255, 255, 0.8);
+    float: none;
+    border-radius: 15px;
+    height: 400px;
+}
+
+.logo {
+    width: 80px;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+.logo1 {
+    width: 30px;
+    border-radius: 40px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 5px;
+}
+
+#dispRoom {
+    margin-top: 11px;
+    float: left;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#login_button {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.room_name {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#logout {
+    font-size: 20px;
+    float: right;
+}
+
+#output {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    max-height: 568px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+    float: center;
+    width: 100%;
+    min-height: 568px;
+}
+
+#rooms_output {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+    float: center;
+    width: 100%;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.input_div_room_page {
+    width: 80%;
+}
+
+.input_div label {
+    color: white;
+    font-size: 20px;
+}
+
+.input_div_message_page {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.input_div_message_page label {
+    color: black;
+}
+
+.input_div_message_page #msg {
+    width: 80%;
+}
+
+.input_div_message_page button {
+    margin-top: 15px;
+    width: 50%;
+}
+
+.color_white {
+    color: white
+}
+
+.user_tick {
+    width: 20px;
+}
+
+.logoutbtn {
+    text-align: center;
+    height: 40px;
+    font-size: 15px !important;
+    float: right;
+    height: 35px;
+    top: 2px;
+    margin-right: 10px;
+}
+
+.deletebtn {
+    text-align: center;
+    height: 30px;
+    width: 65px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.alignright button {
+    display: inline-block;
+}
+
+.alignright h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.alignleft h4 {
+    margin-left: 5px;
+}
+
+.message_h4 {
+    margin-left: 5px;
+}
+
+.sharebtn {
+    text-align: center;
+    height: 40px;
+    font-size: 15px !important;
+    margin-right: 5px;
+    height: 35px;
+    top: 2px;
+}
+
+.sharewbtn {
+    text-align: center;
+    height: 40px;
+    font-size: 15px !important;
+    background-color: #25D366 !important;
+    border: none;
+    font-size: 20px;
+    float: left;
+}
+
+.sharecbtn {
+    text-align: center;
+    height: 40px;
+    font-size: 5px !important;
+    visibility: visible;
+    font-size: 15px !important;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.myDiv1 {
+    background: rgba(0, 0, 0, 0.3);
+    width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    height: 39px;
+    width: 100%;
+}
+
+.alignright {
+    text-align: right;
+    white-space: pre-line;
+}
+
+.alignleft {
+    text-align: left;
+    white-space: pre-line;
+}
+
+#demo {
+    color: grey;
+}
+
+.myDiv1 input {
+    border-radius: 0px 0px 0px 10px !important;
+    margin-top: 3px;
+}
+
+.myDiv1 button {
+    border-radius: 0px 0px 10px 0px !important;
+    margin-top: 3px;
+    width: 65px;
+}
+
+.input1 {
+    width: 265px;
+}
+
+.forcon {
+    width: 159px !important;
+    height: 40px;
+    font-size: 17px !important;
+}
+
+.inpgrp {
+    margin-top: 10px;
+    float: left;
+}
+
+.myDiv2 {
+    background-color: white;
+    width: 100%;
+    height: 39px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.btlogin {
+    width: 40% !important;
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+.crtacc {
+    behavior: initial !important;
+    color: blue !important;
+    position: initial !important;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.crtax {
+    behavior: initial !important;
+    color: blue !important;
+    position: initial !important;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.crtaaccc {
+    behavior: initial !important;
+    color: blue !important;
+    position: initial !important;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cryacc {
+    font-size: 15px;
+    position: initial !important;
+}
+
+.martop {
+    margin-top: 3px !important;
+}
+
+#alert_warning {
+    color: red;
+    font-size: 15px;
+}
+
+#alert_success {
+    color: green;
+    font-size: 15px;
+}
+
+.displayPeople {
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.divDispPpl {
+    text-align: left;
+}
+
+.divDispPpl h4 {
+    display: inline-block;
+}
+
+.online_h4 {
+    color: green;
+    float: right;
+}
+
+.offline_h4 {
+    color: grey;
+    float: right;
+}
+
+.display_room_name {
+    text-align: left;
+}
+
+.display_room_name h4 {
+    margin-left: 5px;
+}
+
+.display_room_name a {
+    behavior: none !important;
+    text-decoration: none;
+    color: rgb(40, 40, 40) !important;
+    position: initial !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.diplay_name_info h3 {
+    display: inline-block;
+}
+
+#info-h3 {
+    top: 6px;
+    font-size: 28px;
+}
+
+#info-h3:hover {
+    cursor: pointer;
+}

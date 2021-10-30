@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat</title>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body onload="preset();" onunload="setPresence();">
+    <div class="container">
+
+
+        <center>
+            <div class="myDiv2" id="Div_info">
+                <img src="logo.png" class="logo1">
+                <h3 id="dispRoom">Room Name: </h3>
+                <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger logoutbtn"
+                    onclick="logout();"></button>
+                <!-- Modal 1 -->
+                <button id="logout" class="glyphicon glyphicon-share btn btn-primary sharebtn" data-toggle="modal"
+                    data-target="#Share"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="Share">
+                    <div class="modal-dialog">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Share</h4>
+                            </div>
+                            <div class="modal-body" style="height: 125px;">
+                                <button id="logout1" class="btn btn-primary sharewbtn" onclick="shareWhatsapp();">Share
+                                    via
+                                    WhatsApp</button>
+                                <div class="input-group inpgrp">
+                                    <input class="form-control forcon" type="text" id="myInput" readonly>
+                                    <button onclick="myFunction()" class="btn btn-primary sharecbtn">
+                                        Copy link
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal 2 -->
+                <button id="logout" class="glyphicon glyphicon-user btn btn-info sharebtn" data-toggle="modal"
+                    data-target="#People"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="People">
+                    <div class="modal-dialog">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">People</h4>
+                            </div>
+                            <div class="modal-body displayPeople" id="people_output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="output"></div>
+            <div class="input-group myDiv1" id="Div_msg">
+                <span>
+                    <input type="text" id="msg" placeholder="Message" class="form-control" style="width: 80%">
+                    <button onclick="send();" class="btn btn-success" id="btnSend">Send</button>
+                </span>
+            </div>
+        </center>
+    </div>
+    <script src="lets_chat_page.js"></script>
+</body>
+
+</html>
